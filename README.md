@@ -6,7 +6,7 @@ Wen LI, Lixin DUAN, Dong XU and Ivor W. Tsang,
 
 To run the example code: 
 
-1. Download the weighted LIBSVM package. Compile its MATLAB interface (by running the ./matlab/make.m under the libsvm folder). I have also provided a compiled mex file on Windows OS. 
+1. Download the weighted LIBSVM package. Compile its MATLAB interface (by running the file ./matlab/make.m under the weighted libsvm folder). I have also provided a compiled mex file on Windows OS. 
 
 2. Setup the path for weighted libSVM package in demo.m. I.e., modify the first line to the folder containing your mex file.
 addpath('.\libs\libsvm-weights-3.20\matlab');
