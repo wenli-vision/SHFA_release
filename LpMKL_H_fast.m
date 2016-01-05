@@ -16,7 +16,7 @@ function [coefficients, model, last_obj] = LpMKL_H_fast(labels, K_root, Hvs, par
 %
 % Note the weighted libSVM is needed.
 %
-% Written by LI Wen,  wli1@e.ntu.edu.sg
+% Written by LI Wen,  liwebnu@gmail.com
 % Cleaned on Feb-11, 2014 for release.
 
 [n_samples, n_basekernels] = size(Hvs);
