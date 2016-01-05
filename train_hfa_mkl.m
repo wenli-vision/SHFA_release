@@ -5,8 +5,7 @@ function [model, H, obj]= train_hfa_mkl(slabels, tlabels, K_root, parameters)
 %     Wen Li, Lixin Duan, Dong Xu, Ivor W. Tsang, "Learning with Augmented
 %     Features for Supervised and Semi-supervised Heterogeneous Domain 
 %     Adaptation," IEEE Transactions on Pattern Analysis and Machine 
-%     Intelligence, 20 Nov. 2013. IEEE computer Society Digital Library. 
-%     IEEE Computer Society, <http://doi.ieeecomputersociety.org/10.1109/TPAMI.2013.167>
+%     Intelligence (T-PAMI), vol. 36(6), pp. 1134-1148, JUN 2014. 
 %
 %   The paper is still in press. Please update the citation, when the
 %   volume number is available. 
