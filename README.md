@@ -1,7 +1,7 @@
 # HFA_release
 * This is an example code for our HFA method described in Algorithm 1 in
 
-Wen LI, Lixin DUAN, Dong XU and Ivor W. Tsang,
+Wen LI, Lixin DUAN, Dong XU and Ivor W. TSANG,
 "Learning with Augmented Features for Supervised and Semi-supervised Heterogeneous Domain Adaptation," IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), vol. 36(6), pp. 1134-1148, JUN 2014.
 
 To run the example code: 
