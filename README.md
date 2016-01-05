@@ -4,7 +4,8 @@
 Wen LI, Lixin DUAN, Dong XU and Ivor W. Tsang,
 "Learning with Augmented Features for Supervised and Semi-supervised Heterogeneous Domain Adaptation," IEEE Transactions on Pattern Analysis and Machine Intelligence (T-PAMI), vol. 36(6), pp. 1134-1148, JUN 2014.
 
-* To run the example code: 
+To run the example code: 
+
 1. Download the weighted LIBSVM package. Compile its MATLAB interface (by running the ./matlab/make.m under the libsvm folder). I have also provided a compiled mex file on Windows OS. 
 
 2. Setup the path for weighted libSVM package in demo.m. I.e., modify the first line to the folder containing your mex file.
