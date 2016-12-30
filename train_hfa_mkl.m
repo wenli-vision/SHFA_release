@@ -30,7 +30,7 @@ function [model, H, obj]= train_hfa_mkl(slabels, tlabels, K_root, parameters)
 %   - H: the learned tranformation metric
 %   - obj: vector of objective values
 %
-% Written by LI Wen, wli1@e.ntu.edu.sg
+% Written by LI Wen, liwenbnu@gmail.com
 % Cleaned on Feb-11, 2014 for release.
 
 % =============================================
