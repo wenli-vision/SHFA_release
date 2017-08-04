@@ -81,7 +81,7 @@ function [model, obj, wn, kernel] = return_alpha(K, K_root, Hvs, labels, coeffic
 
 kernel  = sumkernels(K, K_root, Hvs, labels, coefficients) +diag(param.weight);
 opt     = ['-q -s 2 -t 4 -n ', num2str(1/n)];
-model   = svmtrain(ones(n, 1), [(1:n)', kernel], opt);
+model   = svmtrain(ones(n, 1), ones(n, 1), [(1:n)', kernel], opt);
 
 idx         = full(model.SVs);
 alpha       = abs(model.sv_coef);

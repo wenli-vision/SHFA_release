@@ -1,8 +1,9 @@
 clear; clc;
 % =============================================
 % set paths
-addpath('..\libs\libsvm-3.17\matlab');
-addpath('..\codes_collections\release\commonfuns');
+addpath('.\libs\libsvm-weights-3.20\matlab');
+addpath('.\commfuns');
+addpath('.lib\sumkernels');
 
 % =============================================
 % set params
@@ -59,13 +60,11 @@ for c = 1:length(categories)
     % -----------------------------
     % set the ratio of positive samples in unlabeld data, which can be
     % eatimated using the labeled samples, or from prior knowledge. 
-    % Here we use the formmer way, but using the ground truth ratio gives 
-    % better results, in our paper, we used the ground truth ratio as the 
-    % prior knowledge. The same value is also used in T-SVM for comparison
-    
-    param.upper_ratio = 1/31*(1+param.ratio_var);
-    param.lower_ratio = 1/31*(1-param.ratio_var);
-
+    % In our paper, we used the ground truth ratio as the prior knowledge. 
+    % The same value is also used in T-SVM for comparison
+    ratio               = sum(data.target_test_labels == c)/length(data.target_test_labels);
+    param.upper_ratio   = ratio;
+    param.lower_ratio   = ratio;    
     
     % training
     [model, Us, labels, coefficients, rho, obj] = train_shfa_pnorm(source_labels, target_labels, K, K_root, aug_features, param);

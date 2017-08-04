@@ -66,7 +66,7 @@ weight  = [ones(n_s, 1)*(1/parameters.C_s); ones(n_l, 1)*(1/parameters.C_t); one
 % first train SVM_L, and predict the unlabeled data as the initial labels
 Q_l     = (K(n_s+1:n_s+n_l, n_s+1:n_s+n_l) + 1).*(tlabels*tlabels') + diag(weight(n_s+1:n_s+n_l));
 opt     = ['-q -s 2 -t 4 -n ', num2str(1/n_l)];
-model   = svmtrain(ones(n_l,1), [(1:n_l)', Q_l], opt);
+model   = svmtrain(ones(n_l,1), ones(n_l,1), [(1:n_l)', Q_l], opt);
 alpha   = zeros(n_l, 1);
 alpha(full(model.SVs)) = abs(model.sv_coef);
 y_alpha                = tlabels .* alpha;
