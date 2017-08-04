@@ -2,7 +2,7 @@ clear; clc;
 % =============================================
 % set paths
 addpath('.\libs\libsvm-weights-3.20\matlab');
-addpath('.\lib\sumkernels');
+addpath('.\libs\sumkernels');
 addpath('.\commfuns');
 
 % =============================================
